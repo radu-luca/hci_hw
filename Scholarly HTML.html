@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Scholarly HTML</title>
+  <link rel="stylesheet" href="css/scholarly.min.css">
+  <script src="js/scholarly.min.js"></script>
+</head>
+
+<body prefix="schema: http://schema.org">
+
+  <div role="contentinfo">
+    <dl>
+      <dt>Authors</dt>
+      <dd>
+        Luca Radu
+        <br>
+        Email: luca.radu@info.uaic.ro
+      </dd>
+    </dl>
+  </div>
+  <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+    <h2>Abstract</h2>
+    <p>
+      The purpose of this report is to present the HCI principles, methods and best practices based on the software
+      developed for the license - web application Online Store.
+    </p>
+  </section>
+  <section id="introduction" role="doc-introduction">
+    <h2>Introduction</h2>
+    <p>
+      In this article I will discuss 3 ideas / concepts regarding project design, including sketches, wireframes,
+      storyboards and other prototypes.
+    </p>
+    <p>
+      I will also present 5 used interaction design patterns where I will discuss the problem that solves it, when to
+      use it and why.
+    </p>
+    <p>
+      In additional I will list and discuss about 4 Person interacting with the software program.
+    </p>
+
+  </section>
+  <section id="qoc">
+    <h2>Questions, Options, Criteria</h2>
+    <p>The QOC method is used to decide how to create a rational design.</p>
+    <section id="intro_qoc">
+      <h3>
+        Product design presentation - single page product
+      </h3>
+      <p>
+        In the following figure I represented the design of a product :
+      <p>
+        <small>
+          I want to specify that the page design is not completely finished because the software application is in
+          progress.
+        </small>
+      </p>
+      <!-- screen to add -->
+      <figure typeof="schema:image">
+        <img src="" alt="">
+      </figure>
+      </p>
+
+    </section>
+    <section id="qoc2">
+      <h3>
+        QOC 1: Where do I place product images ?
+      </h3>
+      <p>
+        <b>Question </b>: Where do I place product images ?
+      </p>
+      <p>
+        <b>Option 1 </b> : Top left of the page
+      </p>
+      <p>
+        <b>Option 2 </b> : Top right of the page
+      </p>
+      <p>
+        <b>Criteria 1</b> : Easy to read and capture the user's attention because we are used to reading from left to
+        right
+      </p>
+      <p>
+        <b>Criteria 2</b> : Low user effort for the user to find the images of a product being one of the main reasons
+        when accessing the page
+      </p>
+      <p>
+        For option number 1 as a positive assessment are both criteria 1 and 2.
+      </p>
+      <p>
+        And for option number 2 as a positive assessment is criteria number 2 but as a negative assessment criteria
+        number 1.
+      </p>
+      <p>
+        In conclusion, I chose option number 1 to represent the product images at the top left of the page.
+      </p>
+    </section>
+    <section id="qoc3">
+      <h3>
+        QOC 2: What information about the seller should I display on the product page?
+      </h3>
+      <p>
+        <b>Question </b>: What information about the seller should I display on the product page?
+      </p>
+      <p>
+        <b>Option 1 </b> : Username of the seller with a link to the profile page
+      </p>
+      <p>
+        <b>Option 2 </b> : Username of the seller with a link to the profile page, profile picture, user rating and a
+        short description of the user's skills
+      </p>
+      <p>
+        <b>Criteria 1</b> : Screen compactness
+      </p>
+      <p>
+        <b>Criteria 2</b> : Low user effort to find information about who sells the product without leaving the product
+        page
+      </p>
+      <p>
+        <b>Criteria 3</b> : Due to the displayed user rating, the credibility of the buyer increases, so it is closer to
+        the next step - to buy the product.
+      </p>
+      <p>
+        For option number 1 as a positive assessment are criteria 2 and 3 and respectively as a negative assessment
+        criteria 1.
+      </p>
+      <p>
+        And for option number 2 as a positive assessment is criteria number 1 but as a negative assessment criteria
+        number 2 and 3.
+      </p>
+      <p>
+        In conclusion, I chose option number 2 to display Username of the seller with a link to the profile page,
+        profile picture, user rating and a short description of the user's skills.
+      </p>
+    </section>
+    <section id="qoc3">
+      <h3>
+        QOC 3: What marketing strategies should I display on the product page?
+      </h3>
+      <p>
+        <b>Question </b>: What marketing strategies should I display on the product page?
+      </p>
+      <p>
+        <b>Option 1 </b> : Similar products
+      </p>
+      <p>
+        <b>Option 2 </b> : Bundles of frequently bought products together
+      </p>
+      <p>
+        <b>Criteria 1</b> : Continuous information about other products of the site with minimal effort for the user
+      </p>
+      <p>
+        <b>Criteria 2</b> : Screen compactness
+      </p>
+      <p>
+        For option number 1 as a positive assessment are criteria 1 and respectively as a negative assessment criteria
+        2.
+      </p>
+      <p>
+        And for option number 2 as a positive assessment is criteria number 1 but as a negative assessment are also
+        criteria number 2.
+      </p>
+      <p>
+        In conclusion, I could have chosen any of the options but I decided to develop the option with similar products.
+      </p>
+    </section>
+    <figure>
+      <img src="media/product_page.png"
+           alt="Similar products" style="width: 100%;">
+      <figcaption>Product page with similar products, images, seller information</figcaption>
+  </figure>
+  </section>
+  <section id="design_patterns">
+    <h3>Interaction Design Patterns</h3>
+    <p>
+      An interaction design pattern is a general repeatable solution to a commonly-occurring usability problem in
+      interface design or interaction design.
+    </p>
+    <p>
+      For the following interaction design patterns I will specify what the problem is, the solution, when to use it and examples based on my application.
+    </p>
+    <section id="id1">
+      <h3>
+        Lazy Registration
+      </h3>
+
+      <p>
+        <b>Problem: </b> Many users when they arrive on the site are not interested in going through the whole registration process just to have access to the information provided by the developer so they may leave the application before they know what it offers.
+      </p>
+      <p>
+        <b>Solution: </b>This design pattern allows the user to access the information provided by the application and when it is only absolutely necessary to register
+      </p>
+      <p>
+        <b>When to use: </b> Use this design pattern when you don't give visitors access to sensitive information or when you don't need to know the user's information to interact with the app.
+      </p>
+      <p>
+        <b>About my application: </b> In my application any visitor can access the product pages can see the profile of the sellers and pages such as about us, contact us etc. The user is obliged to register when he wants to buy a product or when he wants to become a seller to place products on the site.
+      </p>
+    </section>
+    <section id="id1">
+      <h3>
+        Clear Primary Actions
+      </h3>
+
+      <p>
+        <b>Problem: </b> Many users when they are on a page that requires action on their part do not know what to do next and need buttons clearly highlighted with the name of the action.
+      </p>
+      <p>
+        <b>Solution: </b>Create the button design so that it stands out to suggest to the user what action to take.
+      </p>
+      <p>
+        <b>When to use: </b> It is used whenever a form is completed and an action is to be interpreted. For example, submit a form.</p>
+      <p>
+        <b>About my application: </b>  In my web application I highlighted the buttons when you submit a form or when you are on a product page and the next step is to click on the "Buy now" button that is highlighted.</p>
+        <figure>
+          <img src="media/submit.png"
+               alt="Clear primary action - Submit button" style="width: 100%;">
+          <figcaption>Clear primary action - Submit button</figcaption>
+      </figure>
+          
+      </section>
+    <section id="id1">
+      <h3>
+        Dark Patterns
+      </h3>
+
+      <p>
+        <b>Problem: </b> They are used to force an action that the user has preset at the beginning. For example, the newsletter subscription button is checked when you register, but it can be unchecked at any time.</p>
+      <p>
+        <b>Solution: </b> Dark patterns are widely used in e-commerce platforms to lead or trick users into performing certain actions. To use dark patterns responsibly, you must be ethical and have empathy with your users.
+      </p>
+      <p>
+        <b>When to use: </b> When you recommend an action to the user to take it but also give him free choice.
+        <p>
+        <b>About my application: </b>In my application I will use it to check the mail subscription box in order to get as large an email base as possible and then to create a relationship with my users to turn them into customers.
+        <small>It needs to be implemented in the future</small> 
+      </p>
+    </section>
+    <section id="id1">
+      <h3>
+        Subscription Plans
+      </h3>
+
+      <p>
+        <b>Problem: </b> The users of the application can be classified in different categories and in order to differentiate them, they offer them subscription plans (including sign up). 
+        <p>
+        <b>Solution: </b> Offer users an options menu for joining at certain rates or free.</p>
+      <p>
+        <b>When to use: </b> When your application can clearly classify users into at least 2 categories.
+        <p>
+        <b>About my application:</b> My classic application users in 3 categories: visitors, customers and sellers. To be a user you have to register and to become a seller you need to make a request that must be approved by the administrator. 
+      </p>
+      <figure>
+        <img src="media/submit.png"
+             alt="Subscription Plans - Register" style="width: 100%;">
+        <figcaption>Subscription Plans - Register</figcaption>
+    </figure>
+    </section>
+    <section id="id1">
+      <h3>
+        Gallery 
+      </h3>
+
+      <p>
+        <b>Problem: </b> The user needs to browse a collection of high quality images
+        <p>
+        <b>Solution: </b> A gallery consists of multiple images that can be browsed one by one by navigating between them. Only one image is viewed at a time</p>
+      <p>
+        <b>When to use: </b> Use when the user needs to browse through a series of images in a sequential way.
+        <p>
+        <b>About my application:</b> We used Gallery Design Pattern when users visit a product page to access a series of images with that product. 
+      </p>
+      <figure>
+        <img src="media/product_page.png"
+             alt="Gallery images" style="width: 100%;">
+        <figcaption>Gallery images</figcaption>
+    </figure>
+    </section>
+
+  </section>
+  <section id="persona">
+    <h3>
+      Personas
+    </h3>
+    <section id="first_persona">
+      <h3>
+        Primary first persona
+      </h3>
+      <p><b>Type: </b>Primary</p>
+      <p><b>Name: </b>Crudu Angel</p>
+      <p>
+        <b>Date of Birth: </b>11/11/1970
+      </p>
+      <p>
+        <b>Gender:</b> Male
+      </p>
+      <p>
+        <b>Location: </b> Bucuresti, Romania
+      </p>
+      <p>
+        <b>Work place: </b> Entrepreneur
+      </p>
+      <p>
+        <b>School: </b> Faculty of Law, University of Bucharest
+      </p>
+      <p>
+        <b>
+          Detailed Description: 
+        </b>
+        Crudu Angel is a 10-year-old former entrepreneur who runs a successful business. Being an older person, surfing the internet is not his strong point. Angel has decided to expand his online business and needs services to run a shopify online store. The cost of such a service is high due to the level of difficulty and responsibility. Once Angel has reached the service purchase platform he would like to get as much information as possible about that service, who sells it and how the process goes. He has all the time in the world to analyze and his experience tells him to take the time to check every detail.
+      </p>
+      <p>
+        <b>
+          Main Points: 
+        </b>
+        <ul>
+          <li>He has no experience interacting with my application</li>
+          <li>He wants as much detail as possible, maybe even talking to an assistant</li>
+          <li>The design is less relevant as long as the text is clear</li>
+        </ul>
+      </p>
+      <p>
+        <b>Goals: </b>
+      </p>
+      <ul>
+        <li>Expanding your business online</li>
+      </ul>
+      <p>
+        <b>
+          Frustrations and Pain Points:
+        </b>
+        <ul>
+          <li>It's hard to browse the internet</li>
+          <li>He may cancel the purchase of the service at any time due to lack of detailed information</li>
+        </ul>
+      </p>
+      <p>
+        <b>
+          Scenarios: 
+        </b>
+        <p>
+          The service will be used when Angel needs people with experience in e-commerce. When you find the right service you will have huge expectations and any failure will be attributed directly to the online platform, not the seller.
+        </p>
+      </p>
+    </section>
+    <section id="first_persona">
+      <h3>
+        Primary second persona
+      </h3>
+      <p><b>Type: </b>Primary</p>
+      <p><b>Name: </b>Andronache Cristina</p>
+      <p>
+        <b>Date of Birth: 07/04/1990</b>
+      </p>
+      <p>
+        <b>Gender: Female</b>
+      </p>
+      <p>
+        <b>Location: Iasi, Romania</b>
+      </p>
+      <p>
+        <b>Work place: Endava, Software developer</b>
+      </p>
+      <p>
+        <b>School: UAIC, Computer Science</b>
+      </p>
+      <p>
+        <b>
+          Detailed Description: 
+        </b>
+        Andronache Cristina is a young programmer who loves the business world. In his free time he started to create a company that wants to bring furniture from all over Europe and make it available on the Romanian market. In order to sustain his business, he needs people with experience in online marketing. Once he interacts with my application and finds the service he needs, he wants to do some checks to make sure the quality is guaranteed. Because he is a person with a full time job, the time dedicated to the business is limited and he would like to have as much information as possible available on the product page.
+      </p>
+      <p>
+        <b>
+          Main Points: 
+        </b>
+        <p>
+          <ul>
+            <li>He wants to spend as little time as possible in choosing the product</li>
+            <li>Because he is a programmer he can quickly notice a low quality design that does not inspire confidence</li>
+            <li></li>
+          </ul>
+        </p>
+      </p>
+      <p>
+        <b>Goals: </b>
+      </p>
+      <ul>
+        <li>Avoid wasting time</li>
+        <li>Be as productive as possible</li>
+        <li>Creating your own business and closing the job full time</li>
+      </ul>
+      <p>
+        <b>
+          Frustrations and Pain Points:
+        </b>
+        <ul>
+          <li>Long service delivery time</li>
+          <li>Product quality is never guaranteed when you use online services</li>
+        </ul>
+      </p>
+      <p>
+        <b>
+          Scenarios: 
+        </b>
+        She will use the online shopping store when Cristina needs help in areas she can't handle or when she doesn't have enough time. Some scenarios are online marketing, business website design, market research, virtual assistant, etc.
+      </p>
+    </section>
+    <section id="first_persona">
+      <h3>
+        Secondary thrid persona
+      </h3>
+      <p><b>Type: </b>Secondary </p>
+      <p><b>Name: </b>Almes Ion</p>
+      <p>
+        <b>Date of Birth: </b> 08/05/1993
+      </p>
+      <p>
+        <b>Gender: </b> Male
+      </p>
+      <p>
+        <b>Location: </b> Iasi, Romania
+      </p>
+      <p>
+        <b>Work place: </b> Influencer
+      </p>
+      <p>
+        <b>School: </b> Secondary education
+      </p>
+      <p>
+        <b>
+          Detailed Description: 
+        </b>
+        Almes Ion is an influencer known in the online environment in Romania. In the last year, online revenues have started to decline and sponsorships have disappeared. The solution he thought of is to provide his services to offer online advertising to authorized brands in Romania. By accessing the application, he wants to convince himself that the site is an authorized one and placing his ad will guarantee him a good reputation in the online environment.
+      </p>
+      <p>
+        <b>
+          Main Points: 
+        </b>
+        <ul>
+          <li>He wants to do some research of the application's market</li>
+          <li>He wants to make sure the store is legit</li>
+          <li>He wants you to place his services to benefit the users of the platform</li>
+        </ul>
+      </p>
+      <p>
+        <b>Goals: </b>
+      </p>
+      <ul>
+        <li>To make money</li>
+        <li>Create sponsorship ads for a fee</li>
+        <li>Creating a community of customers who will buy the service again</li>
+      </ul>
+      <p>
+        <b>
+          Frustrations and Pain Points:
+        </b>
+        <ul>
+          <li>Some available low quality services will make you look for another platform</li>
+          <li>The design of the application for an online person can be difficult to suit</li>
+        </ul>
+      </p>
+      <p>
+        <b>
+          Scenarios: 
+        </b>
+        Ion wants to place his service on the online platform but not before making sure that it will not damage his reputation and the customer community is a target for his product.
+      </p>
+    </section>
+  </section>
+  
+</body>
+
+</html>
